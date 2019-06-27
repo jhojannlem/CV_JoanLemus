@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+:root {
+    --color1: #ff8c00;
+    --color2: rgb(247, 247, 247);
+    --color3: #222020;
+    --color4: rgb(126, 114, 10);
+    --color5: #5F5751;
+
+}
+
+/*fuentes litograficas*/
+* {
+    box-sizing: border-box;
+
+    /*reset bordes*/
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/**************************************************/
+/*           estilos para el Body generales       */
+/**************************************************/
+body {
+    background: #000;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+}
+
+h3,
+h4 {
+    color: var(--color2)
+}
+
+/******************************************/
+/*          Contenedor general            */
+/******************************************/
+.container {
+    background: rgb(20, 19, 19);
+    padding: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+
+/*******************************************************/
+/* Estilos para el contenedor de encabezado -Flexbox   */
+/*******************************************************/
+header {
+    width: 100%;
+    min-width: 300px;
+    background: url(../img/home.jpg) no-repeat fixed;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+/****************************************************/
+/*          Estilos para el menu responsive         */
+/****************************************************/
+header nav {
+    max-width: 90%;
+    z-index: 1000;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+header nav ul li {
+    flex-grow: 1;
+    padding: 10px;
+
+}
+
+header nav ul li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+header nav ul li:hover {
+    background: rgb(32, 51, 56);
+}
+
+header nav ul li a span {
+    margin-right: 10px;
+}
+
+.menu_bar {
+    display: none;
+}
+
+/****************************************************/
+/*         Estilos para la imagen de perfil         */
+/****************************************************/
+.foto {
+    width: 20%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.foto img {
+    border-radius: 50%;
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+/****************************************************/
+/*   Estilos para contenedor de info personal       */
+/****************************************************/
+
+.info {
+    width: 60%;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 0;
+    border: 2px solid var(--color1);
+}
+
+.info hr {
+    width: 80%;
+    background: var(--color4);
+}
+
+/******************************************/
+/*    Estilos para titulos de secciones   */
+/******************************************/
+.title {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin: 15px;
+    auto;
+
+}
+
+.titlecentro {
+    background: rgb(20, 19, 19);
+    padding: .5em;
+    position: absolute;
+
+}
+
+.black {
+    background: #000;
+}
+
+.decoration {
+    width: 90%;
+    height: 2px;
+    display: block;
+    float: left;
+    background: var(--color1);
+
+}
+
+/******************************************/
+/*    Estilos para seccion Skill          */
+/******************************************/
+
+
+.skill {
+
+    padding: 10px;
+    margin: 1em;
+    width: 30%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: rgb(175, 236, 251);
+    border: 1px solid #000;
+}
+
+.skill span {
+    font-size: 4em;
+}
+
+.experience {
+    background: #000;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/******************************************/
+/*          Estilos para Footer           */
+/******************************************/
+footer {
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    background: rgb(47, 47, 47);
+    min-width: 300px;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: rgb(151, 151, 151);
+}
+
+footer span {
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer a {
+    margin: auto;
+    text-decoration: none;
+    color: rgb(151, 151, 151);
+}
+
+footer a :hover {
+    margin: auto;
+    text-decoration: none;
+    color: var(--color1);
+}
+
+/*************************************************/
+/*         Stilos para el Time Line              */
+/*************************************************/
+
+.timeline {
+    width: 95%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+
+    font-size: 20px;
+    padding: 10px;
+}
+
+.item {
+    text-align: center;
+    width: 100%;
+    margin-right: 2px;
+    margin-top: 1px;
+    align-items: center;
+    display: block;
+}
+
+.titulo {
+    width: 100%;
+    height: 80px;
+    padding: .5em;
+}
+
+.titulo p {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(175, 236, 251);
+    margin-top: 2px;
+
+}
+
+.titulo::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 0.5px;
+    margin: 5px auto;
+    border-left: 1px dashed #fff;
+}
+
+.fecha {
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+    font-size: 10px;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    background: var(--color3);
+    z-index: 1;
+    position: relative;
+}
+
+.cargo {
+    color: rgb(192, 170, 98);
+    margin: 1px;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 16px;
+}
+
+.cargo::after {
+    content: '';
+    display: block;
+    height: 40px;
+    width: 0.5px;
+    margin: auto;
+    border-left: 1px dashed #fff;
+}
+
+.cargo::before {
+    content: '';
+    display: block;
+    height: 15px;
+    width: 0.5px;
+    margin: auto;
+    border-left: 2px solid #fff;
+
+}
+
+.descripcion {
+    width: 100%;
+    font-size: 14px;
+    text-align: justify;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #a0000d;
+    font-size: 12px;
+    border-width: 0 1px 0;
+}
+
+.instituto {
+    color: rgb(192, 170, 98);
+    margin: 1px;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 1em;
+}
+
+.linea {
+    width: 95%;
+    height: 3px;
+    background: #FFF;
+    position: absolute;
+    top: 133px;
+    z-index: 0;
+}
+
+.linea::before {
+    content: '';
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #000;
+    border: 2px solid #fff;
+    position: relative;
+    top: -5.5px;
+}
+
+.linea::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 25px solid #fff;
+    border-top: 12.5px solid transparent;
+    border-bottom: 12.5px solid transparent;
+    position: absolute;
+    top: -10px;
+    right: -7px;
+}
+
+/*********************************************************/
+/*      Estilos para el Formulario de Contacto           */
+/*********************************************************/
+.form {
+    width: 340px;
+    height: 440px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    margin: calc(40vh - 220px) auto;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    position: relative
+}
+
+.form h2 {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 180px;
+    color: #78788c;
+    border-bottom: 3px solid #78788c
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .3s;
+    border-bottom: 2px solid #bebed2
+}
+
+input:focus {
+    border-bottom: 2px solid #78788c
+}
+
+p:before {
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: #5a5a5a
+}
+
+button {
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #78788c;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all .3s
+}
+
+button:hover {
+    background: #ff8c00;
+    color: #fff
+}
+
+/*********************************************************/
+/*         Estilos para ventanas modales                 */
+/*********************************************************/
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.876);
+    position: absolute;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+}
+.ventana{
+    width: 70%;
+    height: 380px;
+    background: #ff8c00;
+    margin: auto;
+}
+
+/********************************************************************/
+/*                        parametros Responsive                     *//*--------------------------------*/
+/*                                800px                             */
+/********************************************************************/
+
+@media screen and (max-width:800px) {
+
+    body {
+        padding-top: 0;
+    }
+
+    header {
+        background-size: 130%;
+        background-position-y: 64px;
+    }
+
+    .menu_bar {
+        display: block;
+        background: #000;
+        width: 100%;
+        top: 0;
+        position: fixed;
+        z-index: 1000;
+        border: 1px solid #ff8c00;
+
+    }
+
+    .menu_bar .bt-menu {
+        background: f000;
+        display: block;
+        padding: 20px;
+        color: #fff;
+        overflow: hidden;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    .menu_bar span {
+        float: right;
+
+    }
+
+    header nav {
+        width: 70%;
+        height: calc(100% - 64px);
+        position: fixed;
+        right: 100%;
+        margin-top: 64px;
+        overflow: scroll;
+        background: rgba(0, 0, 0, 0.904);
+        padding-inline-start: 0px;
+        align-items: initial;
+    }
+
+    header nav ul {
+        display: block;
+        width: 100%;
+        margin-top: 0;
+        padding-inline-start: 0px;
+        overflow: hidden;
+    }
+
+    header nav ul li {
+        display: block;
+        float: none;
+        border-bottom: 1px solid var(--color1);
+    }
+
+    header nav ul li a {
+        display: block;
+    }
+
+    .info {
+        width: 80%;
+        margin-top: 5em;
+    }
+
+    .info h1 {
+        font-size: 1.5em;
+    }
+
+    .info h3 {
+        font-size: 1em;
+        margin: .5em;
+    }
+
+    .info h4 {
+        font-size: 0.8em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .foto {
+        width: 30%;
+        margin-top: 1em;
+    }
+
+    .skill {
+        display: block;
+        width: 40%;
+    }
+
+    .title h1 {
+        margin: 0%;
+    }
+
+    .timeline {
+
+        display: inline-block;
+
+    }
+
+    .item {
+        text-align: center;
+        width: 100%;
+        padding: 0%;
+        align-items: center;
+        display: inline-block;
+    }
+    .item::before {
+        content: '';
+        display: inline-block;
+        height: 15px;
+        width: 0.5px;
+        margin:  0 auto;
+        border-left: 2px solid #fff;
+
+    }
+
+    .item:after {
+        content: '';
+        display: block;
+        height: 40px;
+        width: 0.5px;
+        margin: auto;
+        border-left: 2px solid #fff;
+    }
+    .titulo p{
+    margin: 0px;
+    }
+    .titulo::after{
+        display: none;
+    }
+    .cargo {
+        margin: 0;
+        padding: 0;
+    }
+
+    .cargo::after {
+        display: none;
+    }
+
+
+    .linea {
+        display: none
+    }
+
+}
+
+/********************************************************************/
+/*                        parametros Responsive                     */
+/*--------------------------------*/
+/*                                400px                             */
+/********************************************************************/
+@media screen and (max-width:400px) {
+
+    header {
+        display: flex;
+        background-size: 150%;
+        background-position-y: 64px;
+    }
+
+    .foto {
+        width: 30%;
+    }
+    .skill{
+        width: 80%;
+    }
+
+
+}
+
